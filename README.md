@@ -1,8 +1,14 @@
-# aspose-cloud-omr
+# Aspose.OMR for Cloud
 
-## Overview
+[Aspose.OMR for Cloud](https://products.aspose.cloud/omr/cloud) is a REST API that helps you to perform optical mark recognition in the cloud. We provide a series of [SDKs](https://github.com/aspose-omr-cloud). Along with that, you can get [binaries](https://github.com/aspose-omr-cloud/aspose-omr-cloud-dotnet/releases) to start working immediately and recognize various OMR forms.
 
-This is `aspose-cloud-omr` Client SDK for Java
+Developers can embed [optical recognition](https://en.wikipedia.org/wiki/Optical_mark_recognition) in any type of application to extract data from images of tests, exams, questionnaires, surveys, etc. In the repository you can find examples on how to start using [Aspose.OMR API](https://docs.aspose.cloud/display/omrcloud/OMR+API+Specification) in your project.
+
+## Quickstart
+
+You can perform tasks out of the box without writing a single line of code with our [GUI client](https://github.com/aspose-omr-cloud/aspose-omr-cloud-dotnet/releases). You can also refer to the [client documentation](https://docs.aspose.cloud/display/omrcloud/Aspose.OMR.Client+Application).
+
+## Using OMR Cloud API in your Java projects
 
 ## Requirements
 
@@ -41,9 +47,17 @@ Add this dependency to your project's POM:
 </dependency>
 ```
 
+## Optional requirements
+
+To take full advantage of Aspose.OMR for Cloud, _aspose-cloud-storage_ is required. You may refer to official [Aspose Storage SDK](https://github.com/aspose-storage-cloud/aspose-storage-cloud-java) to get more information.
+
 ## Usage
 
-### Gradle users
+### Receive Cloud Keys
+Aspose.Cloud credentials are required to use Aspose.OMR for Cloud API. You can acquire App SID and App Key by registrating at [Aspose Cloud Dashboard](https://dashboard.aspose.cloud). It will take only a couple of minutes.
+
+
+### Gradle / Android Studio users
 
 For Gradle v3.0 and up add this dependency to your project's build file:
 
@@ -70,46 +84,12 @@ Then manually install the following JARs:
 
 ## Getting Started
 
-Please follow the [installation](#installation) instruction and execute the following Java code:
-
-```java
-
-import com.aspose.omr.client.*;
-import com.aspose.omr.client.auth.*;
-import com.aspose.omr.model.*;
-import com.aspose.omr.api.OmrApi;
-
-import java.io.File;
-import java.util.*;
-
-public class OmrApiExample {
-
-    public static void main(String[] args) {
-        // You can acquire App SID and App Key by registrating at Aspose Cloud Dashboard https://dashboard.aspose.cloud
-        String APP_KEY = "xxxxx";
-        String APP_SID = "xxxxx";
-
-        OmrApi apiInstance = new OmrApi(APP_KEY, APP_SID, "https://api.aspose.cloud/v1.1");
-        String name = "name_example"; // String | Name of the file to recognize.
-        String actionName = "actionName_example"; // String | Action name ['CorrectTemplate', 'FinalizeTemplate', 'RecognizeImage']
-        OMRFunctionParam param = new OMRFunctionParam(); // OMRFunctionParam | Function params, specific for each actionName
-        String storage = "storage_example"; // String | Image's storage.
-        String folder = "folder_example"; // String | Image's folder.
-        try {
-            OMRResponse result = apiInstance.postRunOmrTask(name, actionName, param, storage, folder);
-            System.out.println(result);
-        } catch (ApiException e) {
-            System.err.println("Exception when calling OmrApi#postRunOmrTask");
-            e.printStackTrace();
-        }
-    }
-}
-
-```
+### Code example
+You can check out [OMR Demo](https://github.com/aspose-omr-cloud/aspose-omr-cloud-java/tree/master/java_demo) project to get started with Aspose.OMR for Cloud.
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://localhost/v1.1*
+All URIs are relative to *https://api.aspose.cloud/v1.1*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------

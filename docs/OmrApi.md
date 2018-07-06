@@ -13,31 +13,6 @@ Method | HTTP request | Description
 
 Run specific OMR task
 
-### Example
-```java
-// Import classes:
-//import com.aspose.omr.client.ApiException;
-//import com.aspose.omr.api.OmrApi;
-
-
-// You can acquire App SID and App Key by registrating at Aspose Cloud Dashboard https://dashboard.aspose.cloud
-String APP_KEY = "xxxxx";
-String APP_SID = "xxxxx";
-
-OmrApi apiInstance = new OmrApi(APP_KEY, APP_SID, "https://api.aspose.cloud/v1.1");
-String name = "name_example"; // String | Name of the file to recognize.
-String actionName = "actionName_example"; // String | Action name ['CorrectTemplate', 'FinalizeTemplate', 'RecognizeImage']
-OMRFunctionParam param = new OMRFunctionParam(); // OMRFunctionParam | Function params, specific for each actionName
-String storage = "storage_example"; // String | Image's storage.
-String folder = "folder_example"; // String | Image's folder.
-try {
-    OMRResponse result = apiInstance.postRunOmrTask(name, actionName, param, storage, folder);
-    System.out.println(result);
-} catch (ApiException e) {
-    System.err.println("Exception when calling OmrApi#postRunOmrTask");
-    e.printStackTrace();
-}
-```
 
 ### Parameters
 
