@@ -2,16 +2,16 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.aspose</groupId>
-  <artifactId>aspose-cloud-omr</artifactId>
+  <artifactId>aspose-omr-cloud</artifactId>
   <packaging>jar</packaging>
-  <name>aspose-cloud-omr</name>
-  <version>1.0.0</version>
-  <url>https://github.com/swagger-api/swagger-codegen</url>
-  <description>Swagger Java</description>
+  <name>aspose-omr-cloud</name>
+  <version>18.8.0</version>
+  <url>https://products.aspose.cloud/omr/java</url>
+  <description>Java library for communicating with the Aspose.OMR Cloud API</description>
   <scm>
-    <connection>scm:git:git@github.com:swagger-api/swagger-codegen.git</connection>
-    <developerConnection>scm:git:git@github.com:swagger-api/swagger-codegen.git</developerConnection>
-    <url>https://github.com/swagger-api/swagger-codegen</url>
+    <connection>scm:git:git@github.com:aspose-omr-cloud/aspose-omr-cloud-java.git</connection>
+    <developerConnection>scm:git:git@github.com:aspose-omr-cloud/aspose-omr-cloud-java.git</developerConnection>
+    <url>https://github.com/aspose-omr-cloud/aspose-omr-cloud-java</url>
   </scm>
   <prerequisites>
     <maven>2.2.0</maven>
@@ -19,18 +19,18 @@
 
   <licenses>
     <license>
-      <name>Unlicense</name>
-      <url>http://unlicense.org</url>
+      <name>MIT License</name>
+      <url>https://github.com/aspose-omr-cloud/aspose-omr-cloud-java/blob/master/LICENSE</url>
       <distribution>repo</distribution>
     </license>
   </licenses>
 
   <developers>
     <developer>
-      <name>Swagger</name>
-      <email>apiteam@swagger.io</email>
-      <organization>Swagger</organization>
-      <organizationUrl>http://swagger.io</organizationUrl>
+      <name>Aspose OMR</name>
+      <email>aspose.cloud@asposeptyltd.com</email>
+      <organization>Aspose Pty Ltd</organization>
+      <organizationUrl>https://www.aspose.cloud/</organizationUrl>
     </developer>
   </developers>
 
@@ -50,6 +50,7 @@
           <argLine>-Xms512m -Xmx1500m</argLine>
           <parallel>methods</parallel>
           <forkMode>pertest</forkMode>
+		  		  <skip>true</skip>
         </configuration>
       </plugin>
       <plugin>
@@ -141,6 +142,11 @@
           </execution>
         </executions>
       </plugin>
+	  	  <plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-deploy-plugin</artifactId>
+		<version>2.7</version>
+    </plugin>
     </plugins>
   </build>
 
@@ -167,6 +173,14 @@
       </build>
     </profile>
   </profiles>
+  
+  <distributionManagement>
+      <repository>
+      <id>aspose-cloud</id>
+      <name>artifact.aspose.cloud-releases</name>
+      <url>http://artifact.aspose.cloud/repo</url>
+      </repository>
+    </distributionManagement>
 
   <dependencies>
     <dependency>

@@ -1,6 +1,6 @@
 # Aspose.OMR for Cloud
 
-[Aspose.OMR for Cloud](https://products.aspose.cloud/omr/cloud) is a REST API that helps you to perform optical mark recognition in the cloud. We provide a series of [SDKs](https://github.com/aspose-omr-cloud). Along with that, you can get [binaries](https://github.com/aspose-omr-cloud/aspose-omr-cloud-dotnet/releases) to start working immediately and recognize various OMR forms.
+[Aspose.OMR for Cloud](https://products.aspose.cloud/omr/) is a REST API that helps you to perform optical mark recognition in the cloud. We provide a series of [SDKs](https://github.com/aspose-omr-cloud). Along with that, you can get [binaries](https://github.com/aspose-omr-cloud/aspose-omr-cloud-dotnet/releases) to start working immediately and recognize various OMR forms.
 
 Developers can embed [optical recognition](https://en.wikipedia.org/wiki/Optical_mark_recognition) in any type of application to extract data from images of tests, exams, questionnaires, surveys, etc. In the repository you can find examples on how to start using [Aspose.OMR API](https://docs.aspose.cloud/display/omrcloud/OMR+API+Specification) in your project.
 
@@ -41,8 +41,8 @@ Add this dependency to your project's POM:
 ```xml
 <dependency>
     <groupId>com.aspose</groupId>
-    <artifactId>aspose-cloud-omr</artifactId>
-    <version>1.0.0</version>
+    <artifactId>aspose-omr-cloud</artifactId>
+    <version>18.8.0</version>
     <scope>compile</scope>
 </dependency>
 ```
@@ -62,13 +62,13 @@ Aspose.Cloud credentials are required to use Aspose.OMR for Cloud API. You can a
 For Gradle v3.0 and up add this dependency to your project's build file:
 
 ```groovy
-implementation "com.aspose:aspose-cloud-omr:1.0.0"
+implementation "com.aspose:aspose-omr-cloud:18.8.0"
 ```
 
 For older Gradle projects add this dependency to your project's build file:
 
 ```groovy
-compile "com.aspose:aspose-cloud-omr:1.0.0"
+compile "com.aspose:aspose-omr-cloud:18.8.0"
 ```
 
 ### Others
@@ -79,13 +79,13 @@ At first generate the JAR by executing:
 
 Then manually install the following JARs:
 
-* target/aspose-cloud-omr-1.0.0.jar
+* target/aspose-omr-cloud-18.8.0.jar
 * target/lib/*.jar
 
 ## Getting Started
 
 ### Code example
-You can check out [OMR Demo](https://github.com/aspose-omr-cloud/aspose-omr-cloud-java/tree/master/java_demo) project to get started with Aspose.OMR for Cloud.
+You can check out [OMR Demo](java_demo) project to get started with Aspose.OMR for Cloud.
 
 ## Documentation for API Endpoints
 

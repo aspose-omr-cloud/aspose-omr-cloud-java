@@ -9,4 +9,4 @@
 
 ## Building
 * Execute `mvn package` to build demo
-* Run `mvn exec:java -Dexec.mainClass="com.aspose.cloud.omr.demo.App" -Dexec.cleanupDaemonThreads=false` to execute demo
+* Run `mvn exec:java -Dexec.mainClass="com.aspose.omr.cloud.demo.App" -Dexec.cleanupDaemonThreads=false` to execute demo

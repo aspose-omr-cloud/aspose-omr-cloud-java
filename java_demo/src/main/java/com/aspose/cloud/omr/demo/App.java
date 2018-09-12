@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.aspose.cloud.omr.demo;
+package com.aspose.omr.cloud.demo;
 
 import com.aspose.storage.api.StorageApi;
 import com.aspose.omr.client.ApiException;
