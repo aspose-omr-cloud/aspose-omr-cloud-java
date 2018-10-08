@@ -20,6 +20,16 @@ Source code available in our GitHub repository https://github.com/aspose-omr-clo
 
 ## Installation
 
+
+
+### Clone repository
+
+Clone `aspose-omr-cloud` **with submodules**:
+```sh
+git clone https://github.com/aspose-omr-cloud/aspose-omr-cloud-java.git --recurse-submodules
+```
+
+
 To install the API client library to your local Maven repository, simply execute:
 
 ```shell
@@ -83,6 +93,17 @@ Then manually install the following JARs:
 * target/lib/*.jar
 
 ## Getting Started
+
+
+
+### Update submodule 
+Make sure you've cloned [aspose-omr-cloud-demo-data](https://github.com/aspose-omr-cloud/aspose-omr-cloud-demo-data) submodule, that contains all data required to run demo.
+In case you are missing submodules use the following git commands to initialize and update them:
+```sh
+git submodule init
+git submodule update --remote --merge
+```
+
 
 ### Code example
 You can check out [OMR Demo](java_demo) project to get started with Aspose.OMR for Cloud.
